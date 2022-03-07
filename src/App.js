@@ -1,7 +1,21 @@
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
 
+import useSWR from "swr";
+
+const headers = {
+  "x-rapidapi-key": "48d30276b0msha480ba075aefe4bp1f70f0jsn8a952842dfc7",
+  "x-rapidapi-host": "quotes15.p.rapidapi.com",
+};
+const fetcher = async (endpoint) =>
+  await fetch(endpoint, { headers }).then((x) => x.json());
+
+const endpoint = "https://quotes15.p.rapidapi.com/quotes/random/";
 function App() {
+  const { data, error } = useSWR(endpoint, fetcher);
+
+  if (error) return <div>failed to load</div>;
+  if (!data) return <div>loading...</div>;
   return (
     <div className="App">
       <head>
@@ -13,6 +27,34 @@ function App() {
       </head>
       <div id="container">
         <div id="header-side">
+          <span id="message-button">Click me!</span>
+          <div id="API">
+            <div class="callout" data-closable>
+              <button
+                class="close-button"
+                aria-label="Close alert"
+                type="button"
+                data-close
+              >
+                <span aria-hidden="true" style={{ color: "white" }}>
+                  &times;
+                </span>
+              </button>
+            </div>
+            <p>Hey, can i tell you something?? </p>
+            <div id="answer-button-div">
+              <button id="no-button">No</button>
+              <button id="yes-button">Yes</button>
+            </div>
+            <select id="language-selection">
+              <option>English</option>
+              <option>Hungarian</option>
+              <option>Spanish</option>
+              <option>Italian</option>
+            </select>
+            <br />
+            {JSON.stringify(data.content)}
+          </div>
           <nav className="nav">
             <ul id="NavBar">
               <li>
@@ -36,6 +78,7 @@ function App() {
             <h1>Saeid Abedi</h1>
           </div>
         </div>
+
         <div id="mainPage">
           <div id="left-section">
             <embed src="splash.png" id="splash" />
