@@ -15,11 +15,21 @@ function App() {
         <div id="header-side">
           <nav className="nav">
             <ul id="NavBar">
-              <li>Portfolio</li>
-              <li>Biography</li>
-              <li>Tech-Skills</li>
-              <li>Projects</li>
-              <li>Contact</li>
+              <li>
+                <a href="#mainPage">Portfolio</a>
+              </li>
+              <li>
+                <a href="#About-me">biography</a>
+              </li>
+              <li>
+                <a href="#Tech-div">Tech-Skills</a>
+              </li>
+              <li>
+                <a href="#softwareDevelopment">Projects</a>
+              </li>
+              <li>
+                <a href="#contacts-div">Contacts</a>
+              </li>
             </ul>
           </nav>
           <div id="nav-logo">
@@ -30,7 +40,14 @@ function App() {
           <div id="left-section">
             <embed src="splash.png" id="splash" />
             <p id="my-name-is">My Name is Saeid</p>
-            <button id="resume-button">View Resume...</button>
+            <button
+              id="resume-button"
+              onClick={() =>
+                window.open("https://mail.google.com/mail/u/0/#inbox", "_blank")
+              }
+            >
+              View Resume...
+            </button>
             <p id="text1">Frontend developer, UI/UX designer</p>
             <p id="text2">Barcelona,spain</p>
           </div>
@@ -309,6 +326,139 @@ function App() {
                 <strong>Show more....</strong>
               </button>
             </div>
+          </div>
+          <div id="line-for-projects3">
+            <div>
+              <p
+                style={{
+                  padding: "10px",
+                  fontSize: "25px",
+                  color: "whitesmoke",
+                }}
+              >
+                <strong id="MLDevelopment"> Machine Learning</strong>
+              </p>
+            </div>
+            <div id="FacialEmotion-card">
+              <div id="FacialEmotion-card-top">
+                <p
+                  style={{
+                    fontFamily: "Arial",
+                    fontSize: "20px",
+                    borderBottom: "5px solid black",
+                    margin: "2% 0% 0% 0%",
+                    width: "260px",
+                    padding: "6px",
+                  }}
+                >
+                  <strong>Facial emotion detection</strong>
+                </p>
+              </div>
+              <div id="FacialEmotion-card-bottom">
+                <p>
+                  An application created with Python by using Keras and
+                  tensorflow libraries.This application detects 5 human facial
+                  emotions.
+                </p>
+                <br />
+                <br />
+
+                <p>
+                  <strong>click to see the repository...</strong>{" "}
+                </p>
+              </div>
+            </div>
+            <div id="FaceDetection-card">
+              <div id="FaceDetection-card-top">
+                <p
+                  style={{
+                    fontFamily: "Arial",
+                    fontSize: "20px",
+                    borderBottom: "5px solid black",
+                    margin: "2% 0% 0% 0%",
+                    width: "260px",
+                    padding: "6px",
+                  }}
+                >
+                  <strong>Face detection</strong>
+                </p>
+              </div>
+              <div id="FaceDetection-card-bottom">
+                <p>
+                  An application in computer vision which detects human faces.
+                </p>
+                <br />
+                <br />
+
+                <p style={{ margin: "5%" }}>
+                  <strong>click to see the repository...</strong>{" "}
+                </p>
+              </div>
+            </div>
+            <div id="QRScanner-card">
+              <div id="QRScanner-card-top">
+                <p
+                  style={{
+                    fontFamily: "Arial",
+                    fontSize: "20px",
+                    borderBottom: "5px solid black",
+                    margin: "2% 0% 0% 0%",
+                    width: "260px",
+                    padding: "6px",
+                  }}
+                >
+                  <strong>Face detection</strong>
+                </p>
+              </div>
+              <div id="QRScanner-card-bottom">
+                <p>
+                  An application in computer vision which detects human faces.
+                </p>
+                <br />
+                <br />
+
+                <p style={{ margin: "5%" }}>
+                  <strong>click to see the repository...</strong>{" "}
+                </p>
+              </div>
+              <embed src="dots.svg" id="dots3"></embed>
+              <button id="showMore-button3">
+                <strong>Show more....</strong>
+              </button>
+            </div>
+          </div>
+        </div>
+        <p
+          style={{
+            margin: "1000px 0% 0% 5%",
+            width: "800px",
+            height: "100px",
+            fontFamily: "Arial",
+            color: "#c4c4c4",
+            fontSize: "45px",
+          }}
+        >
+          Need a website? Contact me...
+        </p>
+        <div id="contacts-div">
+          <h5>Contacts</h5>
+          <div id="email" className="All-contacts">
+            <img src="pngegg (6).png" alt=" " className="contact-logo"></img>
+            <p style={{ margin: "20%", color: "black" }}>
+              Saeidabedi51@gmail.com
+            </p>
+          </div>
+          <div id="linkedin" className="All-contacts">
+            <img src="pngegg (7).png" className="contact-logo" alt=""></img>
+            <p>@saeidabedi97</p>
+          </div>
+          <div id="instagram" className="All-contacts">
+            <img src="pngegg (8).png" className="contact-logo" alt=""></img>
+            <p>@_saeid_oo</p>
+          </div>
+          <div id="PhoneNO" className="All-contacts">
+            <img src="pngegg (9).png" className="contact-logo" alt=""></img>
+            <p>+34678104112</p>
           </div>
         </div>
       </div>

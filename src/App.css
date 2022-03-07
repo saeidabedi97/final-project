@@ -7,7 +7,7 @@
 #container {
   position: absolute;
   width: 100%;
-  height: 4377px;
+  height: 5600px;
 
   background: #272525;
 }
@@ -500,4 +500,148 @@ h4 {
   width: 100px;
   background-color: #c4c4c4;
   margin: 85px 0% 0% 490px;
+}
+
+#line-for-projects3 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 520px 0% 0% 0%;
+}
+
+#line-for-projects3:not(:empty)::before {
+  margin-right: 5%;
+}
+
+#line-for-projects3::before,
+#line-for-projects3::after {
+  content: "";
+  flex: 1;
+  border-bottom: 8px solid #c4c4c4;
+}
+#line-for-projects3:not(:empty)::after {
+  margin-left: 8%;
+}
+#line-for-projects3::before,
+#line-for-projects3::after {
+  content: "";
+  flex: 1;
+  border-bottom: 8px solid #c4c4c4;
+}
+#MLDevelopment {
+  font-size: 25px;
+  font-family: Rock Salt;
+  color: #c4c4c4;
+}
+
+#FacialEmotion-card {
+  position: absolute;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  margin: 300px 0% 0% 2%;
+  height: 200px;
+  width: 350px;
+  background-color: #c4c4c4;
+}
+#FacialEmotion-card-top {
+  position: absolute;
+  padding: 5px;
+}
+
+#FacialEmotion-card-bottom {
+  position: absolute;
+  padding: 5px;
+  margin: 15% 0% 0% 0%;
+}
+#FaceDetection-card {
+  position: absolute;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  margin: 300px 0% 0% 30%;
+  height: 200px;
+  width: 350px;
+  background-color: #c4c4c4;
+}
+#FaceDetection-card-top {
+  position: absolute;
+  padding: 5px;
+}
+
+#FaceDetection-card-bottom {
+  position: absolute;
+  padding: 5px;
+  margin: 15% 0% 0% 0%;
+}
+#QRScanner-card {
+  position: absolute;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  margin: 300px 0% 0% 58%;
+  height: 200px;
+  width: 350px;
+  background-color: #c4c4c4;
+}
+#QRScanner-card-top {
+  position: absolute;
+  padding: 5px;
+}
+
+#QRScanner-card-bottom {
+  position: absolute;
+  padding: 5px;
+  margin: 15% 0% 0% 0%;
+}
+
+#dots3 {
+  margin: 120px 0% 0% 400px;
+}
+
+#showMore-button3 {
+  position: absolute;
+  height: 35px;
+  width: 100px;
+  background-color: #c4c4c4;
+  margin: 111px 0% 0% 500px;
+}
+
+.All-contacts {
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.contact-logo {
+  height: 100px;
+}
+#contacts-div {
+  position: absolute;
+
+  margin: 50px 0% 0% 25%;
+  background-color: #c4c4c4;
+  width: 800px;
+  border-radius: 5%;
+  height: 600px;
+}
+h5 {
+  font-family: Rock Salt;
+  font-size: 35px;
+  border-bottom: 5px solid #272525;
+}
+
+#email {
+  position: absolute;
+}
+#linkedin {
+  position: absolute;
+  margin-top: 15%;
+}
+#instagram {
+  position: absolute;
+  margin-top: 30%;
+}
+#PhoneNO {
+  position: absolute;
+  margin-top: 45%;
 }
