@@ -1,21 +1,9 @@
 import React from "react";
 import "./App.css";
-
 import useSWR from "swr";
-
-const headers = {
-  "x-rapidapi-key": "48d30276b0msha480ba075aefe4bp1f70f0jsn8a952842dfc7",
-  "x-rapidapi-host": "quotes15.p.rapidapi.com",
-};
-const fetcher = async (endpoint) =>
-  await fetch(endpoint, { headers }).then((x) => x.json());
-
-const endpoint = "https://quotes15.p.rapidapi.com/quotes/random/";
+// import Comp1 from "./Comp1";
+import HideShowDiv from "./HideShowDiv";
 function App() {
-  const { data, error } = useSWR(endpoint, fetcher);
-
-  if (error) return <div>failed to load</div>;
-  if (!data) return <div>loading...</div>;
   return (
     <div className="App">
       <head>
@@ -25,43 +13,20 @@ function App() {
           href="//fonts.googleapis.com/css?family=Rock+Salt"
         />
       </head>
-      <div id="container">
+      <div id="container" data-testId="main">
         <div id="header-side">
-          <span id="message-button">Click me!</span>
-          <div id="API">
-            <div class="callout" data-closable>
-              <button
-                class="close-button"
-                aria-label="Close alert"
-                type="button"
-                data-close
-              >
-                <span aria-hidden="true" style={{ color: "white" }}>
-                  &times;
-                </span>
-              </button>
-            </div>
-            <p>Hey, can i tell you something?? </p>
-            <div id="answer-button-div">
-              <button id="no-button">No</button>
-              <button id="yes-button">Yes</button>
-            </div>
-            <select id="language-selection">
-              <option>English</option>
-              <option>Hungarian</option>
-              <option>Spanish</option>
-              <option>Italian</option>
-            </select>
-            <br />
-            {JSON.stringify(data.content)}
-          </div>
+          <HideShowDiv />
           <nav className="nav">
             <ul id="NavBar">
               <li>
-                <a href="#mainPage">Portfolio</a>
+                <a href="#mainPage" id="Portfolio">
+                  Portfolio
+                </a>
               </li>
               <li>
-                <a href="#About-me">biography</a>
+                <a href="#About-me" id="biography">
+                  biography
+                </a>
               </li>
               <li>
                 <a href="#Tech-div">Tech-Skills</a>
@@ -86,7 +51,10 @@ function App() {
             <button
               id="resume-button"
               onClick={() =>
-                window.open("https://mail.google.com/mail/u/0/#inbox", "_blank")
+                window.open(
+                  "https://1drv.ms/b/s!AkcbS4Fwhtw2gpwCXSc-YW54k65ecw",
+                  "_blank"
+                )
               }
             >
               View Resume...
@@ -450,13 +418,11 @@ function App() {
                     padding: "6px",
                   }}
                 >
-                  <strong>Face detection</strong>
+                  <strong>QR scanner</strong>
                 </p>
               </div>
               <div id="QRScanner-card-bottom">
-                <p>
-                  An application in computer vision which detects human faces.
-                </p>
+                <p>An application in computer vision which scans QR codes.</p>
                 <br />
                 <br />
 
@@ -493,15 +459,15 @@ function App() {
           </div>
           <div id="linkedin" className="All-contacts">
             <img src="pngegg (7).png" className="contact-logo" alt=""></img>
-            <p>@saeidabedi97</p>
+            <p style={{ margin: "20%", color: "black" }}>@saeidabedi97</p>
           </div>
           <div id="instagram" className="All-contacts">
             <img src="pngegg (8).png" className="contact-logo" alt=""></img>
-            <p>@_saeid_oo</p>
+            <p style={{ margin: "20%", color: "black" }}>@_saeid_oo</p>
           </div>
           <div id="PhoneNO" className="All-contacts">
             <img src="pngegg (9).png" className="contact-logo" alt=""></img>
-            <p>+34678104112</p>
+            <p style={{ margin: "20%", color: "black" }}>+34678104112</p>
           </div>
         </div>
       </div>

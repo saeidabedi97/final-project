@@ -654,39 +654,34 @@ h5 {
   position: absolute;
   display: grid;
   grid-template-rows: auto auto;
-  margin-top: 15%;
-  width: 50%;
+  margin-top: 60%;
+  width: 520px;
   height: 250px;
   background-color: #c4c4c4;
   border: 5px solid white;
 }
 
 #answer-button-div {
+  position: static;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 4%;
+  grid-template-columns: auto auto;
+  margin-top: 20%;
+  gap: 5px;
+}
+#no-button {
+  position: static;
 }
 
-#no-button {
-  position: relative;
-  width: 35%;
-}
-#yes-button {
-  position: relative;
-  width: 35%;
-  background-color: #272525;
-  color: whitesmoke;
-}
 #language-selection {
   /* position: absolute; */
-  margin: 2% 0% 0% 0%;
+  margin: 0% 0% 0% 0%;
   width: 150px;
 }
 
 #message-button {
   position: absolute;
   color: whitesmoke;
-  margin-top: 5%;
+  margin-top: 8%;
   border: 4px solid whitesmoke;
   border-radius: 35%;
   width: 100px;
@@ -705,10 +700,13 @@ h5 {
   width: 100px;
 }
 .callout {
-  margin-left: 720px;
+  margin-left: 490px;
 }
 .close-button {
   width: 20px;
   height: 20px;
   background-color: #272525;
+}
+#language-selection-div {
+  position: absolute;
 }
