@@ -9,19 +9,19 @@
   width: 100%;
   height: 5600px;
 
-  background: #272525;
+  background: #1f2833;
 }
 
 #header-side {
   position: fixed;
   display: grid;
   grid-template-columns: auto auto;
-  width: 1510px;
+  width: 1600px;
   padding: 5px;
   height: 80px;
-  background-color: #272525;
+  background-color: #1f2833;
   z-index: 10;
-  border-bottom: 3px solid #c4c4c4;
+  border-bottom: 3px solid #66fcf1;
 }
 
 #NavBar {
@@ -52,9 +52,7 @@ a {
   font-weight: normal;
   font-size: 15px;
   line-height: 36px;
-  /* identical to box height */
-
-  color: #c4c4c4;
+  color: #66fcf1;
 }
 #splash {
   position: absolute;
@@ -62,12 +60,11 @@ a {
   opacity: 0.6;
 }
 #my-name-is {
-  color: #c4c4c4;
+  color: #66fcf1;
   /* margin: 300px 0% 0% 100px; */
   position: absolute;
-  width: 450px;
+  width: 550px;
   height: 131px;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
@@ -84,26 +81,76 @@ a {
 #resume-button {
   position: absolute;
   width: 13%;
-  background-color: #c4c4c4;
-  color: black;
+  text-align: center;
+  /* background-color: #66fcf1; */
+  color: #c5c6c7;
   font-weight: bold;
-  height: 1%;
+  height: 0.8%;
   margin-top: 25%;
   border-radius: 25px;
+  border: 6px solid #66fcf1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
 }
+
 #mypicture-background {
   position: absolute;
-  margin: 19% 0% 0% 10%;
+  margin: 30% 0% 0% 0%;
+  opacity: 0.2;
+}
+#My-Picture1 {
+  position: absolute;
+  height: 400px;
+  width: 350px;
+  margin: 5% 0% 0% 20%;
+  border-radius: 5%;
+  /* z-index: 1; */
   opacity: 0.5;
 }
-#My-Picture {
+
+#My-Picture1:hover {
+  z-index: 1;
+  opacity: 1;
+}
+
+#My-Picture2 {
   position: absolute;
-  height: 450px;
+  height: 400px;
+  width: 350px;
+  margin: 6% 0% 0% 0%;
+  border-radius: 5%;
+  /* z-index: 1; */
+  opacity: 0.5;
+}
+
+#My-Picture2:hover {
+  z-index: 1;
+  opacity: 1;
+}
+#My-Picture3 {
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  margin: 15% 0% 0% 20%;
+  border-radius: 5%;
+  /* z-index: 1; */
+  opacity: 0.5;
+}
+
+#My-Picture3:hover {
+  z-index: 1;
+  opacity: 1;
+}
+
+#My-Picture4 {
+  position: absolute;
+  height: 350px;
   width: 450px;
-  margin: 10% 0% 0% 0%;
+  margin: 23% 0% 0% 2%;
   border-radius: 5%;
   /* z-index: 1; */
 }
+
 #text1 {
   position: absolute;
   width: 239px;
@@ -140,33 +187,48 @@ a {
 
 #About-me {
   position: absolute;
-  background-color: #c4c4c4;
+  /* background-color: #c4c4c4; */
   width: 800px;
   height: 700px;
-  margin-left: 20%;
+  margin: 0% 0% 0% 20%;
   border-radius: 10%;
 }
 
-h2 {
+#clause1 {
+  position: absolute;
+  margin-right: 25%;
+}
+
+#clause2 {
+  position: absolute;
+  margin: 5% 0% 0% 110%;
+}
+
+/* h2 {
   position: absolute;
   width: 250px;
   height: 75px;
-  border-bottom: 3px solid black;
-  font-family: Rock Salt;
+  font-family: "Robot";
   font-style: normal;
   font-weight: normal;
-  font-size: 35px;
+  font-size: 50px;
   line-height: 60px;
-  margin-left: 5%;
-  margin-top: 3%;
-  color: #000000;
+  margin-left: 6%;
+  margin-top: 5%;
+  color: #66fcf1;
+} */
+#Aboutme-header {
+  position: absolute;
+  margin: 6% 0% 0% 2%;
+  width: 250px;
 }
 .about-text {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 25px;
+  color: #c4c4c4;
 }
 #about-text-div {
-  margin: 13% 0% 0% 5%;
+  margin: 5% 0% 0% 15%;
   line-height: 35px;
 }
 
@@ -186,7 +248,7 @@ h2 {
 #line-for-tools::after {
   content: "";
   flex: 1;
-  border-bottom: 5px solid #000000;
+  border-bottom: 5px solid #66fcf1;
 }
 
 #line-for-tools:not(:empty)::after {
@@ -196,20 +258,25 @@ h2 {
 #line-for-tools::after {
   content: "";
   flex: 1;
-  border-bottom: 5px solid #000000;
+  border-bottom: 5px solid #66fcf1;
 }
 #prof {
   font-size: 25px;
   font-family: Rock Salt;
-  color: #000000;
+  color: #66fcf1;
 }
 #prof-list {
+  background: rgba(0, 215, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.7px);
+  -webkit-backdrop-filter: blur(8.7px);
+  border: 1px solid rgba(0, 215, 255, 0.3);
   position: absolute;
-  background-color: #272525;
+  /* background-color: #272525; */
   width: 50%;
   height: 300px;
   margin-left: 25%;
-  border-radius: 8%;
 }
 .prof-text {
   font-size: 20px;
@@ -217,23 +284,36 @@ h2 {
   margin: 8% 0% 0% 10%;
 }
 
-h3 {
+#techSkillHeader {
   position: absolute;
   width: 351px;
   height: 72px;
-  background-color: #272525;
   font-size: 35px;
-  margin: 4% 0% 0% 35%;
-  color: #c4c4c4;
+  margin: 55% 0% 0% 35%;
   font-family: Rock Salt;
+}
+#mosalas1 {
+  position: absolute;
+  margin: 115% 0% 0% 0%;
+  opacity: 0.6;
+}
+#mosalas2 {
+  position: absolute;
+  margin: 55% 0% 0% 55%;
+  opacity: 0.6;
 }
 
 #Tech-div {
   position: absolute;
   height: 1000px;
-  width: 100%;
-  margin-top: 60%;
-  background-color: #c4c4c4;
+  width: 70%;
+  margin: 60% 0% 0% 14%;
+  background: rgba(0, 215, 255, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.7px);
+  -webkit-backdrop-filter: blur(8.7px);
+  border: 1px solid rgba(0, 215, 255, 0.3);
 }
 .logo {
   width: 230px;
@@ -243,14 +323,22 @@ h3 {
 #tech-logos-div {
   position: absolute;
   padding: 10px;
-  margin: 10% 0% 0% 20%;
+  margin: 2% 0% 0% 20%;
   width: 50%;
+}
+
+.skillbar-title {
+  background-color: rgba(0, 215, 255, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.7px);
+  -webkit-backdrop-filter: blur(8.7px);
 }
 
 #tools-skills {
   display: grid;
   grid-row: auto auto;
-  margin: 3% 0% 0% 20%;
+  margin: 3% 0% 0% 0%;
 }
 
 #tools-text-top {
@@ -258,6 +346,23 @@ h3 {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 100px;
+}
+
+#tools1 {
+  width: 220px;
+}
+#tools2 {
+  width: 250px;
+}
+
+#tools3 {
+  width: 270px;
+}
+#tools4 {
+  width: 250px;
+}
+#tools5 {
+  width: 180px;
 }
 
 #splash2 {
@@ -271,7 +376,7 @@ h3 {
   position: absolute;
   display: grid;
   grid-template-columns: auto auto;
-  margin: 8% 0% 0% 12%;
+  margin: 8% 0% 0% 16%;
   gap: 100px;
 }
 
@@ -280,7 +385,7 @@ h3 {
   height: 240px;
   margin-bottom: 25%;
 }
-h4 {
+/* h4 {
   position: absolute;
   margin: 2000px 0% 0% 36%;
   font-family: Rock Salt;
@@ -288,7 +393,7 @@ h4 {
   background-color: #c4c4c4;
   width: 400px;
   text-align: center;
-}
+} */
 
 #Projects-div-Showmore {
   background-color: #272525;
@@ -312,7 +417,7 @@ h4 {
 #line-for-projects::after {
   content: "";
   flex: 1;
-  border-bottom: 8px solid #c4c4c4;
+  border-bottom: 8px solid #66fcf1;
 }
 
 #line-for-projects:not(:empty)::after {
@@ -322,12 +427,12 @@ h4 {
 #line-for-projects::after {
   content: "";
   flex: 1;
-  border-bottom: 8px solid #c4c4c4;
+  border-bottom: 8px solid #66fcf1;
 }
 #softwareDevelopment {
   font-size: 25px;
   font-family: Rock Salt;
-  color: #c4c4c4;
+  color: #66fcf1;
 }
 #movieRecommender-card {
   position: absolute;
@@ -336,7 +441,11 @@ h4 {
   margin: 2350px 0% 0% 2%;
   height: 200px;
   width: 350px;
-  background-color: #c4c4c4;
+  background-color: rgba(0, 215, 255, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.7px);
+  -webkit-backdrop-filter: blur(8.7px);
 }
 #movie-card-top {
   position: absolute;
@@ -347,6 +456,7 @@ h4 {
   position: absolute;
   padding: 5px;
   margin: 15% 0% 0% 4%;
+  color: whitesmoke;
 }
 #WPF-card {
   position: absolute;
@@ -355,17 +465,23 @@ h4 {
   margin: 2350px 0% 0% 30%;
   height: 200px;
   width: 350px;
-  background-color: #c4c4c4;
+  background-color: rgba(0, 215, 255, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.7px);
+  -webkit-backdrop-filter: blur(8.7px);
 }
 #WPF-card-top {
   position: absolute;
   padding: 5px;
+  color: whitesmoke;
 }
 
 #WPF-card-bottom {
   position: absolute;
   padding: 5px;
   margin: 15% 0% 0% 4%;
+  color: whitesmoke;
 }
 #FishGame-card {
   position: absolute;
@@ -374,17 +490,23 @@ h4 {
   margin: 2350px 0% 0% 58%;
   height: 200px;
   width: 350px;
-  background-color: #c4c4c4;
+  background-color: rgba(0, 215, 255, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.7px);
+  -webkit-backdrop-filter: blur(8.7px);
 }
 #FishGame-card-top {
   position: absolute;
   padding: 5px;
+  color: whitesmoke;
 }
 
 #FishGame-card-bottom {
   position: absolute;
   padding: 5px;
   margin: 15% 0% 0% 4%;
+  color: whitesmoke;
 }
 
 /* #software-projects-Showmore {
@@ -399,7 +521,7 @@ h4 {
   position: absolute;
   height: 35px;
   width: 100px;
-  background-color: #c4c4c4;
+  background-color: #66fcf1;
   margin: 2440px 0% 0% 15px;
 }
 #line-for-projects2 {
@@ -419,7 +541,7 @@ h4 {
 #line-for-projects2::after {
   content: "";
   flex: 1;
-  border-bottom: 8px solid #c4c4c4;
+  border-bottom: 8px solid #66fcf1;
 }
 
 #line-for-projects2:not(:empty)::after {
@@ -429,12 +551,12 @@ h4 {
 #line-for-projects2::after {
   content: "";
   flex: 1;
-  border-bottom: 8px solid #c4c4c4;
+  border-bottom: 8px solid #66fcf1;
 }
 #webDevelopment {
   font-size: 25px;
   font-family: Rock Salt;
-  color: #c4c4c4;
+  color: #66fcf1;
 }
 
 #HarbourSpace-card {
@@ -444,17 +566,23 @@ h4 {
   margin: 300px 0% 0% 2%;
   height: 200px;
   width: 350px;
-  background-color: #c4c4c4;
+  background-color: rgba(0, 215, 255, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.7px);
+  -webkit-backdrop-filter: blur(8.7px);
 }
 #HarbourSpace-card-top {
   position: absolute;
   padding: 5px;
+  color: whitesmoke;
 }
 
 #HarbourSpace-card-bottom {
   position: absolute;
   padding: 5px;
   margin: 15% 0% 0% 4%;
+  color: whitesmoke;
 }
 
 #landPage-card {
@@ -464,17 +592,23 @@ h4 {
   margin: 300px 0% 0% 30%;
   height: 200px;
   width: 350px;
-  background-color: #c4c4c4;
+  background-color: rgba(0, 215, 255, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.7px);
+  -webkit-backdrop-filter: blur(8.7px);
 }
 #landPage-card-top {
   position: absolute;
   padding: 5px;
+  color: whitesmoke;
 }
 
 #landPage-card-bottom {
   position: absolute;
   padding: 5px;
   margin: 15% 0% 0% 4%;
+  color: whitesmoke;
 }
 
 #Tribute-card {
@@ -484,17 +618,23 @@ h4 {
   margin: 300px 0% 0% 58%;
   height: 200px;
   width: 350px;
-  background-color: #c4c4c4;
+  background-color: rgba(0, 215, 255, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.7px);
+  -webkit-backdrop-filter: blur(8.7px);
 }
 #Tribute-card-top {
   position: absolute;
   padding: 5px;
+  color: whitesmoke;
 }
 
 #Tribute-card-bottom {
   position: absolute;
   padding: 5px;
   margin: 15% 0% 0% 4%;
+  color: whitesmoke;
 }
 #dots2 {
   margin: 100px 0% 0% 410px;
@@ -508,7 +648,7 @@ h4 {
   position: absolute;
   height: 35px;
   width: 100px;
-  background-color: #c4c4c4;
+  background-color: #66fcf1;
   margin: 85px 0% 0% 490px;
 }
 
@@ -529,7 +669,7 @@ h4 {
 #line-for-projects3::after {
   content: "";
   flex: 1;
-  border-bottom: 8px solid #c4c4c4;
+  border-bottom: 8px solid #66fcf1;
 }
 #line-for-projects3:not(:empty)::after {
   margin-left: 8%;
@@ -538,12 +678,12 @@ h4 {
 #line-for-projects3::after {
   content: "";
   flex: 1;
-  border-bottom: 8px solid #c4c4c4;
+  border-bottom: 8px solid #66fcf1;
 }
 #MLDevelopment {
   font-size: 25px;
   font-family: Rock Salt;
-  color: #c4c4c4;
+  color: #66fcf1;
 }
 
 #FacialEmotion-card {
@@ -553,17 +693,23 @@ h4 {
   margin: 300px 0% 0% 2%;
   height: 200px;
   width: 350px;
-  background-color: #c4c4c4;
+  background-color: rgba(0, 215, 255, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.7px);
+  -webkit-backdrop-filter: blur(8.7px);
 }
 #FacialEmotion-card-top {
   position: absolute;
   padding: 5px;
+  color: whitesmoke;
 }
 
 #FacialEmotion-card-bottom {
   position: absolute;
   padding: 5px;
   margin: 15% 0% 0% 0%;
+  color: whitesmoke;
 }
 #FaceDetection-card {
   position: absolute;
@@ -572,17 +718,23 @@ h4 {
   margin: 300px 0% 0% 30%;
   height: 200px;
   width: 350px;
-  background-color: #c4c4c4;
+  background-color: rgba(0, 215, 255, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.7px);
+  -webkit-backdrop-filter: blur(8.7px);
 }
 #FaceDetection-card-top {
   position: absolute;
   padding: 5px;
+  color: whitesmoke;
 }
 
 #FaceDetection-card-bottom {
   position: absolute;
   padding: 5px;
   margin: 15% 0% 0% 0%;
+  color: whitesmoke;
 }
 #QRScanner-card {
   position: absolute;
@@ -591,17 +743,23 @@ h4 {
   margin: 300px 0% 0% 58%;
   height: 200px;
   width: 350px;
-  background-color: #c4c4c4;
+  background-color: rgba(0, 215, 255, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.7px);
+  -webkit-backdrop-filter: blur(8.7px);
 }
 #QRScanner-card-top {
   position: absolute;
   padding: 5px;
+  color: whitesmoke;
 }
 
 #QRScanner-card-bottom {
   position: absolute;
   padding: 5px;
   margin: 15% 0% 0% 0%;
+  color: whitesmoke;
 }
 
 #dots3 {
@@ -612,7 +770,7 @@ h4 {
   position: absolute;
   height: 35px;
   width: 100px;
-  background-color: #c4c4c4;
+  background-color: #66fcf1;
   margin: 111px 0% 0% 500px;
 }
 
@@ -629,29 +787,45 @@ h4 {
   position: absolute;
 
   margin: 50px 0% 0% 25%;
-  background-color: #c4c4c4;
   width: 800px;
-  border-radius: 5%;
   height: 600px;
+  background-color: rgba(0, 215, 255, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.7px);
+  -webkit-backdrop-filter: blur(8.7px);
 }
 h5 {
-  font-family: Rock Salt;
+  font-family: "Roboto";
   font-size: 35px;
-  border-bottom: 5px solid #272525;
+  border-bottom: 5px solid #66fcf1;
+  color: whitesmoke;
 }
 
 #email {
   position: absolute;
+  color: whitesmoke;
+  font-family: "Roboto";
+  font-size: 20px;
 }
 #linkedin {
   position: absolute;
   margin-top: 15%;
+  color: whitesmoke;
+  font-family: "Roboto";
+  font-size: 20px;
 }
 #instagram {
   position: absolute;
   margin-top: 30%;
+  color: whitesmoke;
+  font-family: "Roboto";
+  font-size: 20px;
 }
 #PhoneNO {
+  color: whitesmoke;
+  font-family: "Roboto";
+  font-size: 20px;
   position: absolute;
   margin-top: 45%;
 }
@@ -663,8 +837,12 @@ h5 {
   margin-top: 60%;
   width: 520px;
   height: 400px;
-  background-color: #c4c4c4;
-  border: 5px solid white;
+  border: 4px solid #66fcf1;
+  background-color: rgba(0, 215, 255, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.7px);
+  -webkit-backdrop-filter: blur(8.7px);
 }
 
 #answer-button-div {
@@ -686,9 +864,9 @@ h5 {
 
 #message-button {
   /* position: absolute; */
-  color: whitesmoke;
+  color: #66fcf1;
   margin-top: 8%;
-  border: 4px solid whitesmoke;
+  border: 4px solid #66fcf1;
   border-radius: 35%;
   width: 100px;
   height: 120px;
@@ -715,4 +893,10 @@ h5 {
 }
 #language-selection-div {
   position: absolute;
+}
+
+#API-text {
+  width: 45%;
+  /* height: ; */
+  text-overflow: ellipsis;
 }

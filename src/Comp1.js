@@ -1,4 +1,4 @@
-import React, { useState, Component } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import useSWR from "swr";
 import { SelectOption } from "./stories/Select";
@@ -24,7 +24,7 @@ const InternationalizedQuote = ({ language }) => {
 
   if (error) return <div>failed to load</div>;
   if (!data) return <div>loading...</div>;
-  return <pre>{JSON.stringify(data.content)}</pre>;
+  return <pre id="API-text">{JSON.stringify(data.content)}</pre>;
 };
 
 // type FormState = 'inital' | 'accept' | 'decline'
@@ -38,7 +38,17 @@ function Comp1() {
       <div className="callout" data-closable>
         <ExitButton />
       </div>
-      <p>Hey, can i tell you something?? </p>
+      <p
+        style={{
+          position: "absolute",
+          margin: "7% 0% 0% 3%",
+          fontFamily: "Roboto",
+          fontSize: "25px",
+          color: "whitesmoke",
+        }}
+      >
+        Hey, can i tell you something??{" "}
+      </p>
       <br />
       <div id="answer-button-div">
         <YesButton onClick={() => setFormState("accept")} />

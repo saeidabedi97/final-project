@@ -1,7 +1,5 @@
 import { render, screen } from "@testing-library/react";
 import HideShowDiv from "./HideShowDiv";
-import App from "./App";
-import Comp1 from "./Comp1";
 import userEvent from "@testing-library/user-event";
 describe("App", () => {
   it("the API button should open the API field", () => {
