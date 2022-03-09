@@ -21,10 +21,6 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
 
 Button.propTypes = {
   /**
-   * Is this the principal call to action on the page?
-   */
-  primary: PropTypes.bool,
-  /**
    * What background color to use
    */
   backgroundColor: PropTypes.string,
@@ -44,7 +40,6 @@ Button.propTypes = {
 
 Button.defaultProps = {
   backgroundColor: null,
-  primary: false,
   size: 'medium',
   onClick: undefined,
 };

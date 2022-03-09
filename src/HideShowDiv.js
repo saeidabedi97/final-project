@@ -14,7 +14,6 @@ export class HideShowDiv extends Component {
   }
 
   hideComponent(name) {
-    console.log(name);
     switch (name) {
       case "showHideComp1":
         this.setState({ showHideComp1: !this.state.showHideComp1 });

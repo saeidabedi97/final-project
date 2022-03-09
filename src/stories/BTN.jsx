@@ -9,7 +9,7 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
   // const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
     <button
-    className='answerButton'
+      className='answerButton'
       type="button"
       // className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
       data-size={size}
@@ -22,10 +22,6 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
 };
 
 Button.propTypes = {
-  /**
-   * Is this the principal call to action on the page?
-   */
-  primary: PropTypes.bool,
   /**
    * What background color to use
    */
@@ -48,7 +44,6 @@ Button.propTypes = {
 
 Button.defaultProps = {
   backgroundColor: null,
-  primary: false,
   size: 'medium',
   onClick: undefined,
 };

@@ -32,7 +32,6 @@ SelectOption.propTypes = {
 
 SelectOption.defaultProps = {
   backgroundColor: null,
-  primary: false,
   size: 'medium',
   onClick: undefined,
 };

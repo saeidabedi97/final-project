@@ -15,38 +15,43 @@ const endpoint = "https://quotes15.p.rapidapi.com/quotes/random/";
 export const YesButton = (props) => <Button label="Yes" {...props} />;
 export const NoButton = (props) => <Button label="No" {...props} />;
 export const ExitButton = (props) => <Button label="X" {...props} />;
-function Comp1() {
-  const [state, setState] = useState("");
-  const { data, error } = useSWR(`${endpoint}?language_code=${state}`, fetcher);
+
+const InternationalizedQuote = ({ language }) => {
+  const { data, error } = useSWR(
+    `${endpoint}?language_code=${language}`,
+    fetcher
+  );
 
   if (error) return <div>failed to load</div>;
   if (!data) return <div>loading...</div>;
+  return <pre>{JSON.stringify(data.content)}</pre>;
+};
 
-  // const noButtonClickHandler = ({ state }) => {
-  //   return <div>Alright have a good day</div>;
-  // };
+// type FormState = 'inital' | 'accept' | 'decline'
 
-  // const yesButtonClickHandler = ({ state }) => {
-  //   return console.log("salam");
-  // };
+function Comp1() {
+  const [state, setState] = useState("");
+  const [formState, setFormState] = useState("initial");
 
   return (
     <div id="API" data-testid="APIField">
-      <div class="callout" data-closable>
+      <div className="callout" data-closable>
         <ExitButton />
       </div>
       <p>Hey, can i tell you something?? </p>
       <br />
       <div id="answer-button-div">
-        <YesButton />
-        <NoButton />
-        <SelectOption
-          value={state}
-          onChange={(e) => setState(e.target.value)}
-        />
+        <YesButton onClick={() => setFormState("accept")} />
+        <NoButton onClick={() => setFormState("decline")} />
+        {formState === "accept" && (
+          <SelectOption
+            value={state}
+            onChange={(e) => setState(e.target.value)}
+          />
+        )}
+        {formState === "decline" && <pre>good bye!</pre>}
+        {state && <InternationalizedQuote language={state} />}
         {/* <pre>{JSON.stringify({ state })}</pre> */}
-
-        {JSON.stringify(data.content)}
       </div>
     </div>
     // </div>
