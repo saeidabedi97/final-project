@@ -30,14 +30,12 @@ const Template = (args) => <Button {...args} />;
 export const YesButton = Template.bind({});
 YesButton.args = {
   size: 'large',
-  label: 'Yes',
   
 };
 
 export const NoButton = Template.bind({});
 NoButton.args = {
   size: 'large',
-  label: 'No',
 };
 
 export const ExitButton = Template.bind({});

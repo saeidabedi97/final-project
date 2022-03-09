@@ -1,8 +1,8 @@
 import React, { useState, Component } from "react";
 import "./App.css";
 import useSWR from "swr";
-import { YesButton, NoButton, ExitButton } from "./stories/BTN.stories";
-import { SelectOption2 } from "./stories/Select.stories";
+import { SelectOption } from "./stories/Select";
+import { Button } from "./stories/BTN";
 const headers = {
   "x-rapidapi-key": "48d30276b0msha480ba075aefe4bp1f70f0jsn8a952842dfc7",
   "x-rapidapi-host": "quotes15.p.rapidapi.com",
@@ -12,9 +12,12 @@ const fetcher = async (endpoint) =>
 
 const endpoint = "https://quotes15.p.rapidapi.com/quotes/random/";
 
+export const YesButton = (props) => <Button label="Yes" {...props} />;
+export const NoButton = (props) => <Button label="No" {...props} />;
+export const ExitButton = (props) => <Button label="X" {...props} />;
 function Comp1() {
-  const { data, error } = useSWR(endpoint, fetcher);
-  const { state, setState } = useState("");
+  const [state, setState] = useState("");
+  const { data, error } = useSWR(`${endpoint}?language_code=${state}`, fetcher);
 
   if (error) return <div>failed to load</div>;
   if (!data) return <div>loading...</div>;
@@ -28,58 +31,22 @@ function Comp1() {
   // };
 
   return (
-    <div id="API">
+    <div id="API" data-testid="APIField">
       <div class="callout" data-closable>
         <ExitButton />
-        {/* <button
-          class="close-button"
-          aria-label="Close alert"
-          type="button"
-          data-close
-        >
-          <span aria-hidden="true" style={{ color: "white" }}>
-            &times;
-          </span>
-        </button> */}
       </div>
       <p>Hey, can i tell you something?? </p>
       <br />
       <div id="answer-button-div">
         <YesButton />
         <NoButton />
-        <SelectOption2 />
-        {/* <button
-          id="yes-button"
-          onClick={(e) => {
-            yesButtonClickHandler(e);
-          }}
-        >
-          yes
-        </button> */}
-        {/* <button
-          id="no-button"
-          onClick={(e) => {
-            // eslint-disable-next-line no-lone-blocks
-            {
-              noButtonClickHandler(e);
-            }
-          }}
+        <SelectOption
           value={state}
-        >
-          No
-        </button> */}
+          onChange={(e) => setState(e.target.value)}
+        />
+        {/* <pre>{JSON.stringify({ state })}</pre> */}
 
-        {/* <div id="langauge-selection-div"> */}
-        {/* <div>
-            {" "}
-            <select id="language-selection">
-              <option>English</option>
-              <option>Hungarian</option>
-              <option>Spanish</option>
-              <option>Italian</option>
-            </select> */}
-
-        {/* {JSON.stringify(data.content)} */}
+        {JSON.stringify(data.content)}
       </div>
     </div>
     // </div>

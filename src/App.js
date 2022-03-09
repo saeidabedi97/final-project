@@ -3,29 +3,21 @@ import "./App.css";
 import useSWR from "swr";
 // import Comp1 from "./Comp1";
 import HideShowDiv from "./HideShowDiv";
-import Projects from "./Projects";
-import ProjectsHideShow from "./ProjectsHideShow";
+
 function App() {
   return (
     <div className="App">
-      <head>
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="//fonts.googleapis.com/css?family=Rock+Salt"
-        />
-      </head>
-      <div id="container" data-testId="main">
+      <div id="container" data-testid="main">
         <div id="header-side">
           <nav className="nav">
-            <ul id="NavBar">
+            <ul id="NavBar" data-testid="navigation">
               <li>
                 <a href="#mainPage" id="Portfolio">
                   Portfolio
                 </a>
               </li>
               <li>
-                <a href="#About-me" id="biography">
+                <a href="#About-me" id="biography" data-testid="biography">
                   biography
                 </a>
               </li>
@@ -72,7 +64,7 @@ function App() {
           <embed src="splash2.svg" id="splash2" />
         </div>
 
-        <div id="About-me">
+        <div id="About-me" data-testid="About">
           <h2>About me</h2>
           <div id="about-text-div">
             <p className="about-text">
@@ -240,10 +232,9 @@ function App() {
               </div>
             </div>
             <embed src="dots.svg" id="dots"></embed>
-            {/* <button id="showMore-button">
+            <button id="showMore-button">
               <strong>Show more....</strong>
-            </button> */}
-            <ProjectsHideShow />
+            </button>
           </div>
           <div id="line-for-projects2">
             <div>

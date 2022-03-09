@@ -10,8 +10,9 @@ describe("App", () => {
   });
   // it("the navigation bar should work ", () => {
   //   render(<App />);
-  //   expect(screen.getByTestId("NavBar")).toBeVisible();
-  //   userEvent.click(screen.getByTestId("Portfolio"));
-  //   expect(screen.getByTestId("About-me")).toBeVisible();
+  //   expect(screen.getByTestId("navigation")).toBeVisible();
+  //   expect(screen.queryByTestId("About")).toBeNull();
+  //   userEvent.click(screen.getByTestId("biography"));
+  //   expect(screen.getByTestId("About")).toBeVisible();
   // });
 });

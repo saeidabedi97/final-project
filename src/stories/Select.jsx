@@ -9,12 +9,13 @@ import './SelectEdit.css';
 export const SelectOption = ({backgroundColor, size,  ...props }) => {
   return (
    <div>
-            {" "}
-            <select className="language-selection">
-              <option>English</option>
-              <option>Hungarian</option>
-              <option>Spanish</option>
-              <option>Italian</option>
+            
+            <select className="language-selection" {...props}>
+              <option >-----</option>
+              <option value="en">English</option>
+              <option value="hu">Hungarian</option>
+              <option value="es">Spanish</option>
+              <option value="it">Italian</option>
             </select>
             </div>
   );
