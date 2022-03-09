@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // import'./src/App.css';
+import './SelectEdit.css'; 
+
 /**
  * Primary UI component for user interaction
  */
@@ -8,7 +10,7 @@ export const SelectOption = ({backgroundColor, size,  ...props }) => {
   return (
    <div>
             {" "}
-            <select id="language-selection">
+            <select className="language-selection">
               <option>English</option>
               <option>Hungarian</option>
               <option>Spanish</option>

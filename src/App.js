@@ -3,6 +3,8 @@ import "./App.css";
 import useSWR from "swr";
 // import Comp1 from "./Comp1";
 import HideShowDiv from "./HideShowDiv";
+import Projects from "./Projects";
+import ProjectsHideShow from "./ProjectsHideShow";
 function App() {
   return (
     <div className="App">
@@ -15,7 +17,6 @@ function App() {
       </head>
       <div id="container" data-testId="main">
         <div id="header-side">
-          <HideShowDiv />
           <nav className="nav">
             <ul id="NavBar">
               <li>
@@ -42,6 +43,7 @@ function App() {
           <div id="nav-logo">
             <h1>Saeid Abedi</h1>
           </div>
+          <HideShowDiv />
         </div>
 
         <div id="mainPage">
@@ -238,9 +240,10 @@ function App() {
               </div>
             </div>
             <embed src="dots.svg" id="dots"></embed>
-            <button id="showMore-button">
+            {/* <button id="showMore-button">
               <strong>Show more....</strong>
-            </button>
+            </button> */}
+            <ProjectsHideShow />
           </div>
           <div id="line-for-projects2">
             <div>

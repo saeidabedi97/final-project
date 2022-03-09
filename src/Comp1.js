@@ -1,7 +1,7 @@
 import React, { useState, Component } from "react";
 import "./App.css";
 import useSWR from "swr";
-import { YesButton, NoButton } from "./stories/BTN.stories";
+import { YesButton, NoButton, ExitButton } from "./stories/BTN.stories";
 import { SelectOption2 } from "./stories/Select.stories";
 const headers = {
   "x-rapidapi-key": "48d30276b0msha480ba075aefe4bp1f70f0jsn8a952842dfc7",
@@ -19,9 +19,9 @@ function Comp1() {
   if (error) return <div>failed to load</div>;
   if (!data) return <div>loading...</div>;
 
-  const noButtonClickHandler = ({ state }) => {
-    return <div>Alright have a good day</div>;
-  };
+  // const noButtonClickHandler = ({ state }) => {
+  //   return <div>Alright have a good day</div>;
+  // };
 
   // const yesButtonClickHandler = ({ state }) => {
   //   return console.log("salam");
@@ -30,7 +30,8 @@ function Comp1() {
   return (
     <div id="API">
       <div class="callout" data-closable>
-        <button
+        <ExitButton />
+        {/* <button
           class="close-button"
           aria-label="Close alert"
           type="button"
@@ -39,12 +40,12 @@ function Comp1() {
           <span aria-hidden="true" style={{ color: "white" }}>
             &times;
           </span>
-        </button>
+        </button> */}
       </div>
       <p>Hey, can i tell you something?? </p>
       <br />
       <div id="answer-button-div">
-        <YesButton style={{ width: "25%" }} />
+        <YesButton />
         <NoButton />
         <SelectOption2 />
         {/* <button
@@ -68,8 +69,8 @@ function Comp1() {
           No
         </button> */}
 
-        <div id="langauge-selection-div">
-          {/* <div>
+        {/* <div id="langauge-selection-div"> */}
+        {/* <div>
             {" "}
             <select id="language-selection">
               <option>English</option>
@@ -78,11 +79,10 @@ function Comp1() {
               <option>Italian</option>
             </select> */}
 
-          <br />
-          {/* {JSON.stringify(data.content)} */}
-        </div>
+        {/* {JSON.stringify(data.content)} */}
       </div>
     </div>
+    // </div>
   );
 }
 

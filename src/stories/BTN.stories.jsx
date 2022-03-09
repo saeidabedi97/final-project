@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Button } from './Button';
+import { Button } from './BTN';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'BTN/buttons/yesButton',
+  title: 'BTN/buttons/Controls',
   component: Button,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
@@ -30,12 +30,19 @@ const Template = (args) => <Button {...args} />;
 export const YesButton = Template.bind({});
 YesButton.args = {
   size: 'large',
-  label: 'Button',
-  title: 'Yes',
+  label: 'Yes',
+  
 };
 
 export const NoButton = Template.bind({});
 NoButton.args = {
-  size: 'small',
-  label: 'Button',
+  size: 'large',
+  label: 'No',
 };
+
+export const ExitButton = Template.bind({});
+ExitButton.args ={ 
+
+  size: 'large',
+  label: 'X',
+}

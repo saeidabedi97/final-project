@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Comp1 from "./Comp1";
+import Projects from "./Projects";
 // import Comp2 from "./Comp2";
 import "./App.css";
-export class HideShowDiv extends Component {
+export class ProjectsHideShow extends Component {
   constructor() {
     super();
     this.state = {
@@ -30,18 +30,18 @@ export class HideShowDiv extends Component {
   render() {
     const { showHideComp1 } = this.state;
     return (
-      <div style={{ marginTop: "5%", position: "absolute" }}>
-        {showHideComp1 && <Comp1 style={{ marginTop: "25%" }} />}
+      <div style={{ marginTop: "10%", position: "absolute" }}>
+        {showHideComp1 && <Projects />}
 
-        <span
-          id="message-button"
+        <button
+          id="showMore-button"
           onClick={() => this.hideComponent("showHideComp1")}
         >
-          Click me
-        </span>
+          Show more{" "}
+        </button>
       </div>
     );
   }
 }
 
-export default HideShowDiv;
+export default ProjectsHideShow;
