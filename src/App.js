@@ -81,7 +81,6 @@ function App() {
             <embed src="Saeid3.jpg" alt="a picture" id="My-Picture3" />
             <embed src="Saeid4.jpg" alt="a picture" id="My-Picture4" />
           </div>
-          {/* <embed src="splash2.svg" id="splash2" /> */}
         </div>
 
         <embed src="kir.svg" id="Aboutme-header" />
@@ -128,6 +127,7 @@ function App() {
             </ul>
           </div>
           <embed src="clause2.svg" id="clause2" />
+          <embed src="Group 3.svg" id="background2" />
         </div>
         {/* <h3>Technical Skills</h3> */}
         <embed src="Techskill.svg" id="techSkillHeader" />
@@ -199,9 +199,14 @@ function App() {
                 <br />
                 <br />
 
-                <p>
-                  <strong>click to see the repository...</strong>{" "}
-                </p>
+                <span
+                  onClick={(e) =>
+                    window.open("https://github.com/saeidabedi97")
+                  }
+                  style={{ cursor: "pointer" }}
+                >
+                  <strong>click here to see the repository...</strong>{" "}
+                </span>
               </div>
             </div>
             <div id="WPF-card">
@@ -226,9 +231,14 @@ function App() {
                 <br />
                 <br />
 
-                <p>
-                  <strong>click to see the repository...</strong>{" "}
-                </p>
+                <span
+                  onClick={(e) =>
+                    window.open("https://github.com/saeidabedi97")
+                  }
+                  style={{ cursor: "pointer" }}
+                >
+                  <strong>click here to see the repository...</strong>{" "}
+                </span>
               </div>
             </div>
             <div id="FishGame-card">
@@ -253,15 +263,17 @@ function App() {
                 <br />
                 <br />
 
-                <p>
-                  <strong>click to see the repository...</strong>{" "}
-                </p>
+                <span>
+                  <strong>click here to see the repository...</strong>{" "}
+                </span>
               </div>
             </div>
             <embed src="dots.svg" id="dots"></embed>
-            <button id="showMore-button">
-              <strong>Show more....</strong>
-            </button>
+            <span id="showMore-button">
+              <p style={{ color: "whitesmoke", width: "150px" }}>
+                <strong>Show more....</strong>
+              </p>
+            </span>
           </div>
           <div id="line-for-projects2">
             <div>
@@ -296,9 +308,16 @@ function App() {
                 <br />
                 <br />
 
-                <p>
-                  <strong>click to see the repository...</strong>{" "}
-                </p>
+                <span
+                  onClick={(e) =>
+                    window.open("https://github.com/saeidabedi97")
+                  }
+                  style={{ cursor: "pointer" }}
+                >
+                  <strong>
+                    <p>click here to see the repository...</p>
+                  </strong>{" "}
+                </span>
               </div>
             </div>
             <div id="landPage-card">
@@ -323,9 +342,14 @@ function App() {
                 <br />
                 <br />
 
-                <p>
-                  <strong>click to see the repository...</strong>{" "}
-                </p>
+                <span
+                  onClick={(e) =>
+                    window.open("https://github.com/saeidabedi97")
+                  }
+                  style={{ cursor: "pointer" }}
+                >
+                  <strong>click here to see the repository...</strong>{" "}
+                </span>
               </div>
             </div>
             <div id="Tribute-card">
@@ -349,14 +373,21 @@ function App() {
                 <br />
                 <br />
 
-                <p>
-                  <strong>click to see the repository...</strong>{" "}
-                </p>
+                <span
+                  onClick={(e) =>
+                    window.open("https://github.com/saeidabedi97")
+                  }
+                  style={{ cursor: "pointer" }}
+                >
+                  <strong>click here to see the repository...</strong>{" "}
+                </span>
               </div>
               <embed src="dots.svg" id="dots2"></embed>
-              <button id="showMore-button2">
-                <strong>Show more....</strong>
-              </button>
+              <span id="showMore-button2">
+                <p style={{ color: "whitesmoke" }}>
+                  <strong>Show more....</strong>
+                </p>
+              </span>
             </div>
           </div>
           <div id="line-for-projects3">
@@ -452,9 +483,11 @@ function App() {
                 </p>
               </div>
               <embed src="dots.svg" id="dots3"></embed>
-              <button id="showMore-button3">
-                <strong>Show more....</strong>
-              </button>
+              <span id="showMore-button3">
+                <p style={{ color: "whitesmoke" }}>
+                  <strong>Show more....</strong>
+                </p>
+              </span>
             </div>
           </div>
         </div>
