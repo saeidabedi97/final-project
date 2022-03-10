@@ -24,20 +24,20 @@ const Template = (args) => <Button {...args} />;
 
 
 
-// export const YesButton = Template.bind({});
-// YesButton.args = {
-//   size: 'large',
+export const YesButton = Template.bind({});
+YesButton.args = {
+  size: 'large',
   
-// };
+};
 
-// export const NoButton = Template.bind({});
-// NoButton.args = {
-//   size: 'large',
-// };
+export const NoButton = Template.bind({});
+NoButton.args = {
+  size: 'large',
+};
 
-// export const ExitButton = Template.bind({});
-// ExitButton.args ={ 
+export const ExitButton = Template.bind({});
+ExitButton.args ={ 
 
-//   size: 'large',
-//   label: 'X',
-// }
+  size: 'large',
+  label: 'X',
+}

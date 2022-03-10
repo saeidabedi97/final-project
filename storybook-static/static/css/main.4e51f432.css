@@ -1,0 +1,33 @@
+.button {
+  border-radius: 100px;
+}
+
+.yesbutton {
+  /* position: absolute; */
+  background-color: #66fcf1;
+  width: 40%;
+  height: 140%;
+  resize: none;
+}
+.nobutton {
+  background-color: #66fcf1;
+  width: 40%;
+  height: 140%;
+  resize: none;
+}
+.exitbutton {
+  background-color: #66fcf1;
+  width: 5%;
+  height: 55%;
+  margin-right: 2%;
+  resize: none;
+}
+
+.language-selection {
+  width: 120px;
+  height: 25px;
+  background-color: #66fcf1;
+}
+
+
+/*# sourceMappingURL=main.4e51f432.css.map*/
