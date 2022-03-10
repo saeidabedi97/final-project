@@ -838,47 +838,47 @@ h5 {
 }
 
 #API {
-  position: absolute;
-  display: grid;
-  grid-template-rows: auto auto;
-  margin-top: 60%;
+  position: fixed;
+  /* display: flex;
+  justify-content: flex-end; */
+  margin-top: 10%;
   width: 1000px;
-  height: 500px;
+  height: 50%;
   border: 4px solid #66fcf1;
   background-color: rgba(0, 215, 255, 0.26);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.7px);
   -webkit-backdrop-filter: blur(8.7px);
+  z-index: 1;
 }
 
 #answer-button-div {
-  position: static;
+  /* position: absolute; */
   display: grid;
-  grid-template-columns: auto auto;
-  margin-top: 0%;
-  gap: 35px;
+  /* justify-content: flex-start; */
+  grid-template-columns: 1fr 1fr;
+  margin: 15% 0% 0% 15%;
 }
 /* #no-button {
   position: static;
 } */
 
-#language-selection {
+/* #language-selection {
   /* position: absolute; */
-  margin: 0% 0% 0% 0%;
+/* margin: 0% 0% 0% 0%;
   width: 150px;
-}
-
+} */
 #message-button {
-  position: absolute;
+  position: fixed;
+
   color: #66fcf1;
-  margin-top: 15px;
+  margin: 6% 0% 0% 0%;
   border: 4px solid #66fcf1;
   border-radius: 35%;
   width: 120px;
   height: 60px;
   padding: 5px;
-  text-align: center;
   font-family: "Sansita Swashed";
   font-size: 25px;
 }
@@ -887,24 +887,40 @@ h5 {
   opacity: 50%;
   cursor: pointer;
 }
-#message-text {
+/* #message-text {
   margin-top: 15px;
   width: 100px;
-}
+} */
 .callout {
-  margin-left: 490px;
+  display: flex;
+  justify-content: end;
+  /* position: absolute; */
+  /* margin-left: 97%; */
 }
-.close-button {
+#API-text {
+  color: whitesmoke;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  font-size: 20px;
+  font-family: "Sansita Swashed";
+}
+
+#yes-and-no-button {
+  height: 100%;
+}
+#Can-I {
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+  font-family: "Sansita Swashed";
+  font-size: 25px;
+}
+/* .close-button {
   width: 20px;
   height: 20px;
   background-color: #272525;
-}
+} */
 #language-selection-div {
   position: absolute;
-}
-
-#API-text {
-  width: 45%;
-  /* height: ; */
-  text-overflow: ellipsis;
 }

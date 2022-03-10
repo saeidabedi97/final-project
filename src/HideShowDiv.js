@@ -29,16 +29,18 @@ export class HideShowDiv extends Component {
   render() {
     const { showHideComp1 } = this.state;
     return (
-      <div style={{ marginTop: "5%", position: "fixed" }}>
-        {showHideComp1 && <Comp1 />}
-
-        <span
-          id="message-button"
-          onClick={() => this.hideComponent("showHideComp1")}
-          data-testid="APIButton"
-        >
-          Click me
-        </span>
+      <div>
+        <div id="message-button">
+          <span
+            onClick={() => this.hideComponent("showHideComp1")}
+            data-testid="APIButton"
+          >
+            Click me
+          </span>
+        </div>
+        {showHideComp1 && (
+          <Comp1 onClose={() => this.hideComponent("showHideComp1")} />
+        )}
       </div>
     );
   }

@@ -22,10 +22,7 @@ const Template = (args) => <Button {...args} />;
 //   label: 'Button',
 // };
 
-// export const Secondary = Template.bind({});
-// Secondary.args = {
-//   label: 'Button',
-// };
+
 
 // export const YesButton = Template.bind({});
 // YesButton.args = {

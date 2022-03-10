@@ -5,23 +5,19 @@ import './BTNedit.css';
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
+export const Button = ({ primary, backgroundColor, size, label, className, ...props }) => {
   return (
-    <div id='answer-buttons'>
     <button
-      className='Yesbutton'
       type="button"
       // className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
       data-size={size}
       // style={backgroundColor && { backgroundColor }}
       {...props}
+      className={'button' + ' ' + className}
     >
       {label}
     </button>
-
-    
    
-  </div>
   );
 };
 

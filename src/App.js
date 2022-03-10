@@ -52,8 +52,8 @@ function App() {
           <div id="nav-logo">
             <h1>Saeid Abedi</h1>
           </div>
-          <HideShowDiv />
         </div>
+        <HideShowDiv />
 
         <div id="mainPage">
           <div id="left-section">

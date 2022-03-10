@@ -11,7 +11,7 @@ export const SelectOption = ({backgroundColor, size,  ...props }) => {
    <div>
             
             <select className="language-selection" {...props}>
-              <option >-----</option>
+              <option >Select langauge...</option>
               <option value="en">English</option>
               <option value="hu">Hungarian</option>
               <option value="es">Spanish</option>

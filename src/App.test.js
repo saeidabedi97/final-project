@@ -1,6 +1,8 @@
 /* eslint-disable jest/valid-title */
 import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import App from "./App";
+import Comp1 from "./Comp1";
 // import userEvent from "@testing-library/user-event";
 
 describe("App", () => {
@@ -8,11 +10,12 @@ describe("App", () => {
     render(<App />);
     expect(screen.getByTestId("main")).toBeVisible();
   });
-  // it("the navigation bar should work ", () => {
-  //   render(<App />);
-  //   expect(screen.getByTestId("navigation")).toBeVisible();
-  //   expect(screen.queryByTestId("About")).toBeNull();
-  //   userEvent.click(screen.getByTestId("biography"));
-  //   expect(screen.getByTestId("About")).toBeVisible();
-  // });
+
+  it("it should close the API field when clicked", () => {
+    render(<Comp1 />);
+    expect(screen.getByTestId("APIField")).toBeVisible();
+    // userEvent.click(screen.getByTestId("exitbuttonTest"));
+    // eslint-disable-next-line testing-library/prefer-presence-queries
+    // expect(screen.getByTestId("API")).toBeNull();
+  });
 });

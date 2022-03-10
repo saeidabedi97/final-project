@@ -1,11 +1,24 @@
-.answerButton {
-  position: static;
-  width: 350px;
-  height: 65px;
-  background-color: #66fcf1;
+.button {
+  border-radius: 100px;
 }
 
-/* .Yesbutton {
-  position: absolute;
+.yesbutton {
+  /* position: absolute; */
   background-color: #66fcf1;
-} */
+  width: 40%;
+  height: 140%;
+  resize: none;
+}
+.nobutton {
+  background-color: #66fcf1;
+  width: 40%;
+  height: 140%;
+  resize: none;
+}
+.exitbutton {
+  background-color: #66fcf1;
+  width: 5%;
+  height: 55%;
+  margin-right: 2%;
+  resize: none;
+}
