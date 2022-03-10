@@ -59,6 +59,9 @@ function App() {
           <div id="left-section">
             <embed src="splash.png" id="splash" />
             <p id="my-name-is">My Name is Saeid</p>
+
+            <p id="text1">Frontend developer</p>
+            <p id="text2">Barcelona,Spain</p>
             <span
               id="resume-button"
               onClick={() =>
@@ -68,10 +71,8 @@ function App() {
                 )
               }
             >
-              View Resume...
+              View CV...
             </span>
-            <p id="text1">Frontend developer, UI/UX designer</p>
-            <p id="text2">Barcelona,Spain</p>
           </div>
           <div style={{ height: "650px", margin: "5%" }}>
             <embed src="Group 17.svg" id="mypicture-background" />
@@ -89,19 +90,19 @@ function App() {
 
           <div id="about-text-div">
             <p className="about-text">
-              <strong>Name and Surname:</strong>Saeid Abedi
+              <strong>Name and Surname:</strong> Saeid Abedi
             </p>
             <p className="about-text">
-              <strong>Born:</strong>July 29th, 1997 in Shiraz,Iran
+              <strong>Born:</strong> July 29th, 1997 in Shiraz,Iran
             </p>
             <p className="about-text">
-              <strong>Place of residence:</strong>Barcelona,Spain
+              <strong>Place of residence:</strong> Barcelona,Spain
             </p>
             <p className="about-text">
-              <strong>status:</strong>Single
+              <strong>status:</strong> Single
             </p>
             <p className="about-text">
-              <strong>Languages:</strong>Persian, English, Spanish
+              <strong>Languages:</strong> Persian, English, Spanish
             </p>
           </div>
           <div id="line-for-tools">

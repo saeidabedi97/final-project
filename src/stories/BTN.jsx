@@ -7,8 +7,9 @@ import './BTNedit.css';
  */
 export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
   return (
+    <div id='answer-buttons'>
     <button
-      className='answerButton'
+      className='Yesbutton'
       type="button"
       // className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
       data-size={size}
@@ -17,6 +18,10 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
     >
       {label}
     </button>
+
+    
+   
+  </div>
   );
 };
 

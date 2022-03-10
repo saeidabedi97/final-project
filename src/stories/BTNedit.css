@@ -1,4 +1,11 @@
 .answerButton {
-  width: 550;
-  height: 100%;
+  position: static;
+  width: 350px;
+  height: 65px;
+  background-color: #66fcf1;
 }
+
+/* .Yesbutton {
+  position: absolute;
+  background-color: #66fcf1;
+} */
