@@ -19,6 +19,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint src/*",
+    "prettier": "react-scripts prettier",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
