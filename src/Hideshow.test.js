@@ -46,6 +46,5 @@ describe("App", () => {
     userEvent.click(screen.getByTestId("yesbuttonTest"));
     expect(screen.getByTestId("selectTest")).toBeVisible();
     userEvent.selectOptions(screen.getByTestId("selectTest"), "en");
-    
   });
 });
