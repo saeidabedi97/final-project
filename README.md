@@ -5,6 +5,16 @@ also there is App.test.js which only tests that the UI renders.
 The Comp1.js is a sticky button with the text Click me. when you click this button, it  leads to some information fetched from the API. 
 the Buttons and the select for this API Field are created and imported from storybook. (All files in stories )
 
+eslint and prettier setup is done and you can run it with the following commands: 
+
+**To install: npm init eslint**
+
+**To run: npm run lint (check the script in package.json it might be something else)**
+**you can see the configurations by finding _prettier and .eslintrc.js_**
+
+
+
+
 
 
 
